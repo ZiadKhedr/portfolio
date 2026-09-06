@@ -751,15 +751,13 @@
               </div>
               <div class="case-label problem">Problem</div>
               <p class="case-problem">New leads sat waiting until someone logged them and notified the agent.</p>
-              <p style="color:var(--muted); font-size:14.5px; margin:14px 0 10px;">I built this system as a complete solution that turns lead intake from a slow manual process into a fully automated one — from the moment a customer's details are submitted to the moment the responsible agent is notified, with no human step in between.</p>
-              <div style="color:var(--text); font-weight:700; font-size:14.5px; margin-bottom:8px;">How the system works:</div>
               <ul>
                 <li><strong>Arabic intake form (Softr):</strong> The customer fills out a simple form with 6 core fields — name, phone number, property type needed, approximate budget, preferred neighborhood, and additional notes — through a clean interface built specifically for the Arabic-speaking market.</li>
                 <li><strong>Structured database (Airtable):</strong> As soon as the form is submitted, the customer's data is logged automatically into a database split across 3 linked tables (properties, leads, agents), letting the office track every lead precisely and link it to the right agent and property.</li>
                 <li><strong>Notification automation (Make):</strong> The moment a lead is logged, the automation detects the new record and sends:
                   <ul>
                     <li>An instant WhatsApp confirmation to the customer that their request was received</li>
-                    <li>A direct WhatsApp notification to the customer for confirmation</li>
+                    <li>A direct WhatsApp notification to the responsible agent with the lead details</li>
                   </ul>
                 </li>
               </ul>
@@ -921,8 +919,6 @@
       { sel: "#viewWork", en: "View my work ↓", ar: "شوف شغلي ↓" },
       { sel: "#projects .stage:nth-child(1) .project-card h3", en: "Real Estate Lead Qualification Automation", ar: "أتمتة تأهيل عملاء العقارات" },
       { sel: "#projects .stage:nth-child(2) .project-card h3", en: "Real Estate Lead Intake & Notification System", ar: "نظام استقبال العملاء والإشعارات للعقارات" },
-      { sel: "#projects .stage:nth-child(2) .project-card > p", en: "I built this system as a complete solution that turns lead intake from a slow manual process into a fully automated one \u2014 from the moment a customer\u2019s details are submitted to the moment the responsible agent is notified, with no human step in between.", ar: "بنيت النظام ده كحل متكامل بيحول استقبال العملاء من عملية يدوية بطيئة لواحدة مؤتمتة بالكامل \u2014 من لحظة ما بيانات العميل تتبعت للحظة ما الوكيل المسؤول يجيله إشعار، من غير أي خطوة بشرية في النص." },
-      { sel: "#projects .stage:nth-child(2) .project-card > div", en: "How the system works:", ar: "النظام شغال إزاي:" },
       { sel: "#projects .stage:nth-child(3) .project-card h3", en: "AI RAG Assistant for a Computer Store", ar: "مساعد RAG بالذكاء الاصطناعي لمحل كمبيوتر" },
       { sel: "#projects .stage:nth-child(4) .project-card h3", en: "AI Restaurant Ordering & Management System", ar: "نظام طلبات وإدارة مطعم بالذكاء الاصطناعي" },
       { sel: "#contact .contact-card h2", en: "Have an idea you want automated?", ar: "عندك فكرة عايز تأتمتها؟" },
@@ -954,7 +950,7 @@
       { sel: "#projects .stage:nth-child(4) li", en: ["Built a full chatbot-based ordering and management system for a restaurant, end to end, in n8n.","Covered order creation, cancellation, tracking, and reservation management.","Built an FAQ system for restaurant policies \u2014 location, menu, availability, pet policy, and more.","Wired delivery status updates directly into the order-tracking flow."], ar: ["بنيت نظام طلبات وإدارة كامل بالشات بوت لمطعم، من الأول للآخر، في n8n.","غطيت إنشاء الأوردرات وإلغاءها وتتبعها وإدارة الحجوزات.","بنيت نظام أسئلة شائعة لسياسات المطعم \u2014 المكان، المنيو، التوافر، سياسة الحيوانات الأليفة، وغيرها.","ربطت تحديثات حالة التوصيل مباشرة في سير تتبع الطلب."] },
       { sel: ".case-label.problem", en: ["Problem","Problem","Problem","Problem"], ar: ["المشكلة","المشكلة","المشكلة","المشكلة"] },
       { sel: ".case-label.stack", en: ["Stack","Stack","Stack","Stack"], ar: ["التقنيات","التقنيات","التقنيات","التقنيات"] },
-      { sel: "#projects .stage:nth-child(2) .project-card ul ul li", en: ["An instant WhatsApp confirmation to the customer that their request was received","A direct WhatsApp notification to the customer for confirmation"], ar: ["تأكيد واتساب فوري للعميل إن طلبه اتستلم","إشعار واتساب مباشر للعميل للتأكيد"] }
+      { sel: "#projects .stage:nth-child(2) .project-card ul ul li", en: ["An instant WhatsApp confirmation to the customer that their request was received","A direct WhatsApp notification to the responsible agent with the lead details"], ar: ["تأكيد واتساب فوري للعميل إن طلبه اتستلم","إشعار واتساب مباشر للوكيل المسؤول بتفاصيل العميل"] }
     ];
 
     var HTML_GROUPS = [
