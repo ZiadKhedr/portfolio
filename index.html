@@ -543,7 +543,7 @@
   <section id="about">
     <div class="kicker mono">01 · about</div>
     <h2 class="section-title">Why work with me</h2>
-    <p class="section-lede" style="max-width:64ch;">I build automation that takes over the repetitive parts of a business — lead forms that book their own meetings, questions that answer themselves, orders that track themselves. I'm an Electronics &amp; Communication engineer, so I think in systems. I've shipped real n8n pipelines to real clients on Upwork, Khamsat, and Mostaql — production work, not tutorials. If it's repetitive and rule-based, it can probably run itself.</p>
+    <p class="section-lede" style="max-width:64ch;">I'm Ziad. I build automation and AI systems with n8n and Python: ordering bots on WhatsApp and Telegram, lead qualification systems, customer support assistants, and multi-agent systems like the Marketing Campaign Builder Agent that turns a product idea into a full marketing campaign. My goal is to save your time and take repetitive work off your team.</p>
   </section>
 
   <section id="education">
@@ -560,14 +560,9 @@
         <p style="margin-top:8px;">Arabic — native<br>English — fluent</p>
       </div>
       <div class="info-block">
-        <h4>AI Automation using n8n</h4>
+        <h4>AI Automation</h4>
         <div class="meta">Digital Egypt Pioneers</div>
-        <p>Workflow automation with APIs and webhooks; chatbot workflows with Telegram and spreadsheet integrations.</p>
-      </div>
-      <div class="info-block">
-        <h4>Microsoft Excel for Data Analysis</h4>
-        <div class="meta">lukebarousse</div>
-        <p>Formulas &amp; functions, dashboards &amp; data visualization, Power Query &amp; Power Pivot, basic DAX.</p>
+        <p>AI automation with Python and libraries like OpenAI SDK; workflow automation with APIs and webhooks; chatbot workflows with Telegram and spreadsheet integrations.</p>
       </div>
     </div>
   </section>
@@ -699,6 +694,36 @@
           <div class="node"></div>
           <div class="stage-content">
             <div class="project-card">
+              <h3>Marketing Campaign Builder Agent</h3>
+              <div class="flow">
+                <span class="flow-step">business + budget</span><span class="flow-arrow">→</span>
+                <span class="flow-step">orchestrator plans</span><span class="flow-arrow">→</span>
+                <span class="flow-step">workers draft</span><span class="flow-arrow">→</span>
+                <span class="flow-step">evaluator revises → action plan</span>
+              </div>
+              <div class="case-label problem">Problem</div>
+              <p class="case-problem">Small businesses can't afford a marketing team, and most advice assumes a budget they don't have.</p>
+              <ul>
+                <li>Built a multi-agent system where an orchestrator reads the business and budget, then dynamically picks which specialist workers to run.</li>
+                <li>Added an evaluator loop that reviews each draft and sends it back for revision until it meets quality criteria.</li>
+                <li>Scales to any budget: organic content only at zero budget, a photographer and small ad tests at a low budget, creator partnerships at a larger one.</li>
+                <li>Outputs a content calendar and action plan covering what to post, who to contact, and what to do next — the human only handles money and physical actions.</li>
+              </ul>
+              <div class="case-label stack">Stack</div>
+              <div class="stack-chips">
+                <span class="chip tech mini">OpenAI Agents SDK</span>
+                <span class="chip tech mini">Orchestrator-Workers</span>
+                <span class="chip tech mini">Evaluator-Optimizer</span>
+                <span class="chip tech mini">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage">
+          <div class="node"></div>
+          <div class="stage-content">
+            <div class="project-card">
               <h3>Real Estate Lead Qualification Automation</h3>
               <div class="flow">
                 <span class="flow-step">new lead</span><span class="flow-arrow">→</span>
@@ -819,6 +844,35 @@
           </div>
         </div>
 
+        <div class="stage">
+          <div class="node"></div>
+          <div class="stage-content">
+            <div class="project-card">
+              <h3>AI Research Assistant</h3>
+              <div class="flow">
+                <span class="flow-step">question</span><span class="flow-arrow">→</span>
+                <span class="flow-step">search sources</span><span class="flow-arrow">→</span>
+                <span class="flow-step">summarize + key points</span><span class="flow-arrow">→</span>
+                <span class="flow-step">structured answer</span>
+              </div>
+              <div class="case-label problem">Problem</div>
+              <p class="case-problem">Researching a topic meant jumping between many sources and manually pulling out what matters.</p>
+              <ul>
+                <li>Built an AI research assistant that takes a question and returns a structured, summarized answer.</li>
+                <li>Automated source gathering and summarization, cutting out hours of manual reading.</li>
+                <li>Developed in collaboration with a teammate.</li>
+              </ul>
+              <div class="case-label stack">Stack</div>
+              <div class="stack-chips">
+                <span class="chip tech mini">Python</span>
+                <span class="chip tech mini">LLM API</span>
+                <span class="chip tech mini">Web Search</span>
+                <span class="chip tech mini">Summarization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -870,17 +924,15 @@
       { sel: ".pill-location", en: "6th of October, Giza, Egypt", ar: "السادس من أكتوبر، الجيزة، مصر" },
       { sel: "#about .kicker", en: "01 \u00B7 about", ar: "٠١ \u00B7 نبذة" },
       { sel: "#about .section-title", en: "Why work with me", ar: "ليه تشتغل معايا؟" },
-      { sel: "#about .section-lede", en: "I build automation that takes over the repetitive parts of a business - lead forms that book their own meetings, questions that answer themselves, orders that track themselves. I'm an Electronics & Communication engineer, so I think in systems. I've shipped real n8n pipelines to real clients on Upwork, Khamsat, and Mostaql - production work, not tutorials. If it's repetitive and rule-based, it can probably run itself.", ar: "ببني أتمتة تستلم الأجزاء المتكررة في البيزنس - فورمات تحجز اجتماعاتها لوحدها، أسئلة ترد على نفسها، وأوردرات تتابع نفسها. أنا مهندس إلكترونيات واتصالات، فبفكر بنظام: مدخلات ومنطق. سلمت بايبلاينز n8n حقيقية لعملاء حقيقيين على Upwork وخمسات ومستقل - شغل production مش شروحات. لو الحاجة متكررة ومبنية على قواعد، غالباً ممكن تشتغل لوحدها." },
+      { sel: "#about .section-lede", en: "I'm Ziad. I build automation and AI systems with n8n and Python: ordering bots on WhatsApp and Telegram, lead qualification systems, customer support assistants, and multi-agent systems like the Marketing Campaign Builder Agent that turns a product idea into a full marketing campaign. My goal is to save your time and take repetitive work off your team.", ar: "أنا زياد. ببني أنظمة أتمتة وذكاء اصطناعي باستخدام n8n وPython: بوتات طلبات على واتساب وتليجرام، أنظمة تأهيل عملاء، مساعدين خدمة عملاء، وأنظمة multi-agent زي Marketing Campaign Builder Agent اللي بيطلع حملة تسويقية كاملة من فكرة المنتج. هدفي أوفر وقتك وأشيل الشغل المتكرر من على فريقك." },
       { sel: "#education .kicker", en: "02 \u00B7 education", ar: "٠٢ \u00B7 التعليم" },
       { sel: "#education .section-title", en: "Education & courses", ar: "التعليم والكورسات" },
       { sel: "#education .grid-2 .info-block:nth-child(1) h4", en: "Bachelor of Electronics & Communication Engineering", ar: "بكالوريوس هندسة الإلكترونيات والاتصالات" },
       { sel: "#education .grid-2 .info-block:nth-child(1) .meta", en: "Arab Academy for Science, Technology & Maritime Transport \u00B7 2025\u20132029 \u00B7 GPA 3.89", ar: "الأكاديمية العربية للعلوم والتكنولوجيا والنقل البحري \u00B7 2025–2029 \u00B7 GPA 3.89" },
       { sel: "#education .grid-2 .info-block:nth-child(2) h4", en: "Languages", ar: "اللغات" },
-      { sel: "#education .grid-2 .info-block:nth-child(3) h4", en: "AI Automation using n8n", ar: "أتمتة الذكاء الاصطناعي باستخدام n8n" },
+      { sel: "#education .grid-2 .info-block:nth-child(3) h4", en: "AI Automation", ar: "أتمتة الذكاء الاصطناعي" },
       { sel: "#education .grid-2 .info-block:nth-child(3) .meta", en: "Digital Egypt Pioneers", ar: "رواد مصر الرقمية" },
-      { sel: "#education .grid-2 .info-block:nth-child(3) p", en: "Workflow automation with APIs and webhooks; chatbot workflows with Telegram and spreadsheet integrations.", ar: "أتمتة سير العمل باستخدام APIs والـ webhooks؛ شات بوتات مع تليجرام وتكامل مع جداول البيانات." },
-      { sel: "#education .grid-2 .info-block:nth-child(4) h4", en: "Microsoft Excel for Data Analysis", ar: "مايكروسوفت إكسل لتحليل البيانات" },
-      { sel: "#education .grid-2 .info-block:nth-child(4) p", en: "Formulas & functions, dashboards & data visualization, Power Query & Power Pivot, basic DAX.", ar: "المعادلات والدوال، لوحات المتابعة وتصور البيانات، Power Query و Power Pivot، أساسيات DAX." },
+      { sel: "#education .grid-2 .info-block:nth-child(3) p", en: "AI automation with Python and libraries like OpenAI SDK; workflow automation with APIs and webhooks; chatbot workflows with Telegram and spreadsheet integrations.", ar: "أتمتة الذكاء الاصطناعي باستخدام Python ومكتبات زي OpenAI SDK؛ أتمتة سير العمل باستخدام APIs والـ webhooks؛ شات بوتات مع تليجرام وتكامل مع جداول البيانات." },
       { sel: "#skills .kicker", en: "03 \u00B7 skills", ar: "٠٣ \u00B7 المهارات" },
       { sel: "#skills .section-title", en: "Skills & tools", ar: "المهارات والأدوات" },
       { sel: "#skills .section-lede", en: "The pieces I actually reach for on client work \u2014 not a keyword dump.", ar: "الأدوات اللي بستخدمها فعلاً في شغل العملاء \u2014 مش مجرد كلمات مفتاحية." },
@@ -896,15 +948,19 @@
       { sel: "#services .section-lede", en: "Automation services built around what clients are actually searching for.", ar: "خدمات أتمتة مبنية على اللي العملاء بيدوروا عليه فعلاً." },
       { sel: "#projects .kicker", en: "06 \u00B7 projects", ar: "٠٦ \u00B7 المشاريع" },
       { sel: "#projects .section-title", en: "Freelance automation projects", ar: "مشاريع أتمتة فريلانس" },
-      { sel: "#projects .stage:nth-child(1) .case-problem", en: "Every lead needed manual triage - no filtering, no scoring, no scheduling.", ar: "كل عميل محتاج فرز يدوي - من غير فلترة ولا تقييم ولا حجز." },
-      { sel: "#projects .stage:nth-child(2) .case-problem", en: "New leads sat waiting until someone logged them and notified the agent.", ar: "العملاء الجدد كانوا بيستنوا لحد ما حد يسجلهم ويبلغ الوكيل." },
-      { sel: "#projects .stage:nth-child(3) .case-problem", en: "Support kept answering the same product questions over and over.", ar: "الدعم كان بيرد على نفس أسئلة المنتجات مرارا وتكرارا." },
-      { sel: "#projects .stage:nth-child(4) .case-problem", en: "Orders, cancellations, reservations, and FAQs all ran through staff chat.", ar: "الطلبات والإلغاءات والحجوزات والأسئلة الشائعة كلها كانت ماشية عبر شات الموظفين." },
+      { sel: "#projects .stage:nth-child(1) .case-problem", en: "Small businesses can't afford a marketing team, and most advice assumes a budget they don't have.", ar: "البيزنس الصغير مايقدرش على تيم تسويق، ومعظم النصايح مبنية على ميزانية مش موجودة." },
+      { sel: "#projects .stage:nth-child(2) .case-problem", en: "Every lead needed manual triage - no filtering, no scoring, no scheduling.", ar: "كل عميل محتاج فرز يدوي - من غير فلترة ولا تقييم ولا حجز." },
+      { sel: "#projects .stage:nth-child(3) .case-problem", en: "New leads sat waiting until someone logged them and notified the agent.", ar: "العملاء الجدد كانوا بيستنوا لحد ما حد يسجلهم ويبلغ الوكيل." },
+      { sel: "#projects .stage:nth-child(4) .case-problem", en: "Support kept answering the same product questions over and over.", ar: "الدعم كان بيرد على نفس أسئلة المنتجات مرارا وتكرارا." },
+      { sel: "#projects .stage:nth-child(5) .case-problem", en: "Orders, cancellations, reservations, and FAQs all ran through staff chat.", ar: "الطلبات والإلغاءات والحجوزات والأسئلة الشائعة كلها كانت ماشية عبر شات الموظفين." },
+      { sel: "#projects .stage:nth-child(6) .case-problem", en: "Researching a topic meant jumping between many sources and manually pulling out what matters.", ar: "البحث في موضوع كان معناه التنقل بين مصادر كتير واستخراج المهم يدوياً." },
       { sel: "#viewWork", en: "View my work ↓", ar: "شوف شغلي ↓" },
-      { sel: "#projects .stage:nth-child(1) .project-card h3", en: "Real Estate Lead Qualification Automation", ar: "أتمتة تأهيل عملاء العقارات" },
-      { sel: "#projects .stage:nth-child(2) .project-card h3", en: "Real Estate Lead Intake & Notification System", ar: "نظام استقبال العملاء والإشعارات للعقارات" },
-      { sel: "#projects .stage:nth-child(3) .project-card h3", en: "AI RAG Assistant for a Computer Store", ar: "مساعد RAG بالذكاء الاصطناعي لمحل كمبيوتر" },
-      { sel: "#projects .stage:nth-child(4) .project-card h3", en: "AI Restaurant Ordering & Management System", ar: "نظام طلبات وإدارة مطعم بالذكاء الاصطناعي" },
+      { sel: "#projects .stage:nth-child(1) .project-card h3", en: "Marketing Campaign Builder Agent", ar: "وكيل بناء الحملات التسويقية" },
+      { sel: "#projects .stage:nth-child(2) .project-card h3", en: "Real Estate Lead Qualification Automation", ar: "أتمتة تأهيل عملاء العقارات" },
+      { sel: "#projects .stage:nth-child(3) .project-card h3", en: "Real Estate Lead Intake & Notification System", ar: "نظام استقبال العملاء والإشعارات للعقارات" },
+      { sel: "#projects .stage:nth-child(4) .project-card h3", en: "AI RAG Assistant for a Computer Store", ar: "مساعد RAG بالذكاء الاصطناعي لمحل كمبيوتر" },
+      { sel: "#projects .stage:nth-child(5) .project-card h3", en: "AI Restaurant Ordering & Management System", ar: "نظام طلبات وإدارة مطعم بالذكاء الاصطناعي" },
+      { sel: "#projects .stage:nth-child(6) .project-card h3", en: "AI Research Assistant", ar: "مساعد البحث بالذكاء الاصطناعي" },
       { sel: "#contact .contact-card h2", en: "Have an idea you want automated?", ar: "عندك فكرة عايز تأتمتها؟" },
       { sel: "#contact .contact-card p", en: "I\u2019m currently taking on freelance automation projects \u2014 n8n pipelines, LLM-powered assistants, and RAG systems for real business workflows. Send me a note and tell me what you\u2019re trying to build.", ar: "أنا حالياً بستقبل مشاريع أتمتة فريلانس \u2014 بايبلاينز n8n ومساعدات LLM وأنظمة RAG لسير شغل حقيقي. ابعتلي وقولي عايز تبني إيه." },
       { sel: "#contact .btn-primary", en: "Start a project", ar: "ابدأ مشروع" },
@@ -924,21 +980,25 @@
       { sel: ".process-step h4", en: ["Audit","Build","Handover + support"], ar: ["تحليل","بناء","تسليم + دعم"] },
       { sel: ".process-step p", en: ["You show me the manual process - I map it and tell you what is worth automating first.","I ship the pipeline on n8n or Make, wired to your apps and AI models and tested end to end.","You get notes, a walkthrough, and support while it settles in."], ar: ["بتوريني العملية اليدوية - برسمها وأقولك إيه اللي يستاهل يتأتمت الأول.","ببني البايبلاين على n8n أو Make متوصل بتطبيقاتك وموديلات الذكاء الاصطناعي ومختبر من الأول للآخر.","بتستلم ملاحظات مكتوبة وشرح عملي ودعم لحد ما النظام يستقر."] },
       { sel: "#services .info-block p", en: ["Custom automations connecting your apps, APIs, and AI models \u2014 from a single task to a full multi-step pipeline.","WhatsApp and Telegram bots that handle support, ordering, and lead capture without a human on the other end.","Semantic search over your product catalog, docs, or FAQs, wired into an AI assistant that actually knows your business.","Automatic scoring, meeting scheduling, and syncing into Google Sheets, Airtable, or your CRM of choice.","Plugging GPT- and Claude-class models into your existing tools and workflows.","Mapping a manual process end-to-end and telling you honestly what\u2019s worth automating first."], ar: ["أتمتة مخصصة بتربط تطبيقاتك وAPIs وموديلات الذكاء الاصطناعي \u2014 من مهمة واحدة لبايبلاين كامل متعدد الخطوات.","بوتات واتساب وتليجرام ترد على الدعم والطلبات وتجمع العملاء من غير ما يكون في إنسان على الطرف التاني.","بحث دلالي في كتالوج منتجاتك أو مستنداتك أو الأسئلة الشائعة، متوصل بمساعد ذكاء اصطناعي يعرف البيزنس بتاعك فعلاً.","تقييم تلقائي، حجز اجتماعات، ومزامنة مع Google Sheets أو Airtable أو نظام CRM اللي بتختاره.","توصيل موديلات زي GPT وClaude في أدواتك وسير شغلك الحالي.","تحليل عملية يدوية من الأول للآخر وأقولك بأمانة إيه أول حاجة تستاهل تتأتمت."] },
-      { sel: "#projects .stage:nth-child(1) .flow-step", en: ["new lead","AI qualification + scoring","auto-schedule meeting","synced to sheets"], ar: ["عميل جديد","تأهيل وتقييم بالذكاء الاصطناعي","حجز اجتماع تلقائي","مزامنة مع الشيتات"] },
-      { sel: "#projects .stage:nth-child(1) li", en: ["Built an AI chatbot for lead qualification and customer management, cutting out repetitive manual triage.","Designed a scoring system that reads customer responses and assigns a lead score automatically.","Automated meeting scheduling for qualified leads, with customer data stored directly in Google Sheets.","Connected APIs, calendars, and AI-based workflows using n8n."], ar: ["بنيت شات بوت ذكاء اصطناعي لتأهيل العملاء وإدارتهم، واستغنيت عن الفرز اليدوي المتكرر.","صممت نظام تقييم بيقرأ ردود العملاء ويدي لكل عميل score تلقائياً.","أتمتة حجز الاجتماعات للعملاء المؤهلين، مع حفظ بيانات العملاء مباشرة في Google Sheets.","ربطت APIs والتقويمات وسير عمل الذكاء الاصطناعي باستخدام n8n."] },
-      { sel: "#projects .stage:nth-child(2) .flow-step", en: ["Arabic intake form (Softr)","synced to Airtable (3 linked tables)","Make automation triggers","WhatsApp notification sent"], ar: ["فورم عربي (Softr)","مزامنة مع Airtable (٣ جداول مرتبطة)","تشغيل أتمتة Make","إشعار واتساب يتبعت"] },
-      { sel: "#projects .stage:nth-child(3) .flow-step", en: ["customer question","semantic product search","build recommendation","lead sent to telegram"], ar: ["سؤال العميل","بحث دلالي في المنتجات","ترشيح مناسب","العميل يتبعت لتليجرام"] },
-      { sel: "#projects .stage:nth-child(3) li", en: ["Built a RAG assistant in n8n to handle customer support and cut down repetitive inquiries.","Set up semantic search with embedding models over the store\u2019s product catalog.","Gave the assistant the ability to recommend PC builds from available parts and live pricing.","Automated lead capture \u2014 customer phone numbers get sent to Telegram the moment purchase intent shows up."], ar: ["بنيت مساعد RAG في n8n للرد على دعم العملاء وتقليل الاستفسارات المتكررة.","جهزت بحث دلالي بموديلات embedding على كتالوج منتجات المحل.","خليت المساعد يقدر يرشح تجميعات PC من القطع المتاحة والأسعار اللحظية.","أتمتة تجميع العملاء \u2014 أرقام تليفونات العملاء بتتبعت لتليجرام أول ما نية الشراء تظهر."] },
-      { sel: "#projects .stage:nth-child(4) .flow-step", en: ["order message","intent + FAQ routing","order created / tracked","delivery status updates"], ar: ["رسالة الطلب","توجيه النية والأسئلة الشائعة","إنشاء وتتبع الطلب","تحديثات حالة التوصيل"] },
-      { sel: "#projects .stage:nth-child(4) li", en: ["Built a full chatbot-based ordering and management system for a restaurant, end to end, in n8n.","Covered order creation, cancellation, tracking, and reservation management.","Built an FAQ system for restaurant policies \u2014 location, menu, availability, pet policy, and more.","Wired delivery status updates directly into the order-tracking flow."], ar: ["بنيت نظام طلبات وإدارة كامل بالشات بوت لمطعم، من الأول للآخر، في n8n.","غطيت إنشاء الأوردرات وإلغاءها وتتبعها وإدارة الحجوزات.","بنيت نظام أسئلة شائعة لسياسات المطعم \u2014 المكان، المنيو، التوافر، سياسة الحيوانات الأليفة، وغيرها.","ربطت تحديثات حالة التوصيل مباشرة في سير تتبع الطلب."] },
-      { sel: ".case-label.problem", en: ["Problem","Problem","Problem","Problem"], ar: ["المشكلة","المشكلة","المشكلة","المشكلة"] },
-      { sel: ".case-label.stack", en: ["Stack","Stack","Stack","Stack"], ar: ["التقنيات","التقنيات","التقنيات","التقنيات"] },
-      { sel: "#projects .stage:nth-child(2) .project-card ul ul li", en: ["An instant WhatsApp confirmation to the customer that their request was received","A direct WhatsApp notification to the responsible agent with the lead details"], ar: ["تأكيد واتساب فوري للعميل إن طلبه اتستلم","إشعار واتساب مباشر للوكيل المسؤول بتفاصيل العميل"] }
+      { sel: "#projects .stage:nth-child(1) .flow-step", en: ["business + budget","orchestrator plans","workers draft","evaluator revises → action plan"], ar: ["البيزنس + الميزانية","الأوركستريتور يخطط","العمال يكتبوا المسودات","المراجع يراجع ← خطة تنفيذ"] },
+      { sel: "#projects .stage:nth-child(1) li", en: ["Built a multi-agent system where an orchestrator reads the business and budget, then dynamically picks which specialist workers to run.","Added an evaluator loop that reviews each draft and sends it back for revision until it meets quality criteria.","Scales to any budget: organic content only at zero budget, a photographer and small ad tests at a low budget, creator partnerships at a larger one.","Outputs a content calendar and action plan covering what to post, who to contact, and what to do next — the human only handles money and physical actions."], ar: ["بنيت نظام متعدد الوكلاء فيه أوركستريتور بيقرأ البيزنس والميزانية، وبعدين يختار ديناميكياً أنهي عمال متخصصين يشتغلوا.","ضفت loop تقييم بيراجع كل مسودة ويرجعها للتعديل لحد ما تحقق معايير الجودة.","بيتوسع مع أي ميزانية: محتوى organic بس مع ميزانية صفر، مصور واختبارات إعلانات صغيرة مع ميزانية قليلة، وشراكات كرييتورز مع ميزانية أكبر.","بيطلع كالندر محتوى وخطة تنفيذ بتغطي هتنشر إيه، هتكلم مين، وهتعمل إيه بعد كده — الإنسان بس بيتعامل مع الفلوس والأفعال الفيزيائية."] },
+      { sel: "#projects .stage:nth-child(2) .flow-step", en: ["new lead","AI qualification + scoring","auto-schedule meeting","synced to sheets"], ar: ["عميل جديد","تأهيل وتقييم بالذكاء الاصطناعي","حجز اجتماع تلقائي","مزامنة مع الشيتات"] },
+      { sel: "#projects .stage:nth-child(2) li", en: ["Built an AI chatbot for lead qualification and customer management, cutting out repetitive manual triage.","Designed a scoring system that reads customer responses and assigns a lead score automatically.","Automated meeting scheduling for qualified leads, with customer data stored directly in Google Sheets.","Connected APIs, calendars, and AI-based workflows using n8n."], ar: ["بنيت شات بوت ذكاء اصطناعي لتأهيل العملاء وإدارتهم، واستغنيت عن الفرز اليدوي المتكرر.","صممت نظام تقييم بيقرأ ردود العملاء ويدي لكل عميل score تلقائياً.","أتمتة حجز الاجتماعات للعملاء المؤهلين، مع حفظ بيانات العملاء مباشرة في Google Sheets.","ربطت APIs والتقويمات وسير عمل الذكاء الاصطناعي باستخدام n8n."] },
+      { sel: "#projects .stage:nth-child(3) .flow-step", en: ["Arabic intake form (Softr)","synced to Airtable (3 linked tables)","Make automation triggers","WhatsApp notification sent"], ar: ["فورم عربي (Softr)","مزامنة مع Airtable (٣ جداول مرتبطة)","تشغيل أتمتة Make","إشعار واتساب يتبعت"] },
+      { sel: "#projects .stage:nth-child(4) .flow-step", en: ["customer question","semantic product search","build recommendation","lead sent to telegram"], ar: ["سؤال العميل","بحث دلالي في المنتجات","ترشيح مناسب","العميل يتبعت لتليجرام"] },
+      { sel: "#projects .stage:nth-child(4) li", en: ["Built a RAG assistant in n8n to handle customer support and cut down repetitive inquiries.","Set up semantic search with embedding models over the store\u2019s product catalog.","Gave the assistant the ability to recommend PC builds from available parts and live pricing.","Automated lead capture \u2014 customer phone numbers get sent to Telegram the moment purchase intent shows up."], ar: ["بنيت مساعد RAG في n8n للرد على دعم العملاء وتقليل الاستفسارات المتكررة.","جهزت بحث دلالي بموديلات embedding على كتالوج منتجات المحل.","خليت المساعد يقدر يرشح تجميعات PC من القطع المتاحة والأسعار اللحظية.","أتمتة تجميع العملاء \u2014 أرقام تليفونات العملاء بتتبعت لتليجرام أول ما نية الشراء تظهر."] },
+      { sel: "#projects .stage:nth-child(5) .flow-step", en: ["order message","intent + FAQ routing","order created / tracked","delivery status updates"], ar: ["رسالة الطلب","توجيه النية والأسئلة الشائعة","إنشاء وتتبع الطلب","تحديثات حالة التوصيل"] },
+      { sel: "#projects .stage:nth-child(5) li", en: ["Built a full chatbot-based ordering and management system for a restaurant, end to end, in n8n.","Covered order creation, cancellation, tracking, and reservation management.","Built an FAQ system for restaurant policies \u2014 location, menu, availability, pet policy, and more.","Wired delivery status updates directly into the order-tracking flow."], ar: ["بنيت نظام طلبات وإدارة كامل بالشات بوت لمطعم، من الأول للآخر، في n8n.","غطيت إنشاء الأوردرات وإلغاءها وتتبعها وإدارة الحجوزات.","بنيت نظام أسئلة شائعة لسياسات المطعم \u2014 المكان، المنيو، التوافر، سياسة الحيوانات الأليفة، وغيرها.","ربطت تحديثات حالة التوصيل مباشرة في سير تتبع الطلب."] },
+      { sel: "#projects .stage:nth-child(6) .flow-step", en: ["question","search sources","summarize + key points","structured answer"], ar: ["السؤال","البحث في المصادر","تلخيص + نقاط أساسية","إجابة منظمة"] },
+      { sel: "#projects .stage:nth-child(6) li", en: ["Built an AI research assistant that takes a question and returns a structured, summarized answer.","Automated source gathering and summarization, cutting out hours of manual reading.","Developed in collaboration with a teammate."], ar: ["بنيت مساعد بحث بالذكاء الاصطناعي بياخد السؤال ويرجع إجابة منظمة وملخصة.","أتمتة تجميع المصادر والتلخيص، وده وفر ساعات من القراءة اليدوية.","اتطور بالتعاون مع زميل."] },
+      { sel: ".case-label.problem", en: ["Problem","Problem","Problem","Problem","Problem","Problem"], ar: ["المشكلة","المشكلة","المشكلة","المشكلة","المشكلة","المشكلة"] },
+      { sel: ".case-label.stack", en: ["Stack","Stack","Stack","Stack","Stack","Stack"], ar: ["التقنيات","التقنيات","التقنيات","التقنيات","التقنيات","التقنيات"] },
+      { sel: "#projects .stage:nth-child(3) .project-card ul ul li", en: ["An instant WhatsApp confirmation to the customer that their request was received","A direct WhatsApp notification to the responsible agent with the lead details"], ar: ["تأكيد واتساب فوري للعميل إن طلبه اتستلم","إشعار واتساب مباشر للوكيل المسؤول بتفاصيل العميل"] }
     ];
 
     var HTML_GROUPS = [
       { sel: "#education .grid-2 .info-block:nth-child(2) p", en: "Arabic \u2014 native<br>English \u2014 fluent", ar: "العربية \u2014 اللغة الأم<br>الإنجليزية \u2014 بطلاقة" },
-      { sel: "#projects .stage:nth-child(2) .project-card > ul > li", en: ["<strong>Arabic intake form (Softr):</strong> The customer fills out a simple form with 6 core fields \u2014 name, phone number, property type needed, approximate budget, preferred neighborhood, and additional notes \u2014 through a clean interface built specifically for the Arabic-speaking market.","<strong>Structured database (Airtable):</strong> As soon as the form is submitted, the customer\u2019s data is logged automatically into a database split across 3 linked tables (properties, leads, agents), letting the office track every lead precisely and link it to the right agent and property.","<strong>Notification automation (Make):</strong> The moment a lead is logged, the automation detects the new record and sends:"], ar: ["<strong>فورم عربي (Softr):</strong> العميل بيملى فورم بسيطة فيها ٦ حقول أساسية \u2014 الاسم، رقم التليفون، نوع العقار المطلوب، الميزانية التقريبية، المنطقة المفضلة، وملاحظات إضافية \u2014 من خلال واجهة نظيفة معمولة مخصوص للسوق العربي.","<strong>قاعدة بيانات منظمة (Airtable):</strong> أول ما الفورم يتبعت، بيانات العميل بتتسجل تلقائياً في قاعدة بيانات متقسمة على ٣ جداول مرتبطة (عقارات، عملاء، وكلاء)، وده بيخلي المكتب يتابع كل عميل بدقة ويربطه بالوكيل والعقار الصح.","<strong>أتمتة الإشعارات (Make):</strong> أول ما العميل يتسجل، الأتمتة بتكتشف السجل الجديد وتبعت:"] }
+      { sel: "#projects .stage:nth-child(3) .project-card > ul > li", en: ["<strong>Arabic intake form (Softr):</strong> The customer fills out a simple form with 6 core fields \u2014 name, phone number, property type needed, approximate budget, preferred neighborhood, and additional notes \u2014 through a clean interface built specifically for the Arabic-speaking market.","<strong>Structured database (Airtable):</strong> As soon as the form is submitted, the customer\u2019s data is logged automatically into a database split across 3 linked tables (properties, leads, agents), letting the office track every lead precisely and link it to the right agent and property.","<strong>Notification automation (Make):</strong> The moment a lead is logged, the automation detects the new record and sends:"], ar: ["<strong>فورم عربي (Softr):</strong> العميل بيملى فورم بسيطة فيها ٦ حقول أساسية \u2014 الاسم، رقم التليفون، نوع العقار المطلوب، الميزانية التقريبية، المنطقة المفضلة، وملاحظات إضافية \u2014 من خلال واجهة نظيفة معمولة مخصوص للسوق العربي.","<strong>قاعدة بيانات منظمة (Airtable):</strong> أول ما الفورم يتبعت، بيانات العميل بتتسجل تلقائياً في قاعدة بيانات متقسمة على ٣ جداول مرتبطة (عقارات، عملاء، وكلاء)، وده بيخلي المكتب يتابع كل عميل بدقة ويربطه بالوكيل والعقار الصح.","<strong>أتمتة الإشعارات (Make):</strong> أول ما العميل يتسجل، الأتمتة بتكتشف السجل الجديد وتبعت:"] }
     ];
 
     function setElText(el, str){
